@@ -1,0 +1,8 @@
+@for (todo of todoList; let i = $index; track i){
+
+
+<div class="list">
+    <h2>{{todo}}</h2> <!-- for dynamic values --> 
+    <button (click)="delete(i)">Delete</button> <!-- click as an event listner deleting i index -->
+</div>
+}
